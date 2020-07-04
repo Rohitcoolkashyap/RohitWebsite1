@@ -32,6 +32,7 @@
  .logo-container img{
  		width:4vh;
  	height: 4vh;
+
  }
  /*navbar*/
  nav{
@@ -52,11 +53,9 @@
  .cart{
  	 	flex:1;
  	 	 	justify-content: flex-end; /* move content at end*/
-
-
  }
  .cart img{
- 	 		width:5vh;
+	 width:5vh;
  	height: 5vh;
  }
  .presentation{
@@ -164,14 +163,25 @@
 footer{
 	display: flex;
 	margin-top: 20vh;
+	align-items: center;
 }
 .footer-intro{
 	flex: 1;
 	text-align: center;
+	bottom: 0px;
 }
 @media screen and (max-width: 1024px){
+	header{
+		width: 90%;
+		justify-content: center;
+
+	}
+	.cart{
+		flex:0.5;
+	}
 	.presentation{
 		flex-direction: column;
+		width: 100%;
 	}
 	.introduction{
 		margin-top: 5vh;
@@ -190,12 +200,13 @@ footer{
  	margin-top: 5vh;
  }
  .cover img{
- 	height: 80%;
+ 	height: 70%;
  	width: 33vh;
  }
  .laptop-select{
+	 margin-top: 5px;
  	bottom: 5%;
- 	width: 50%;
+ 	width: 30%;
  	right: 50%;
  	transform: translate(50%,5%);
 }
@@ -217,11 +228,16 @@ footer{
   .cta-add{
 
  	
- 	margin: 30px 0px 0px 20px;
+ 	margin: 30px 0px 0px 15px;
 
  }
   .cta-select{
- 	 	margin: 30px 0px 0px 20px;
+ 	 	margin: 30px 0px 0px 15px;
 
  }
+	.footer-intro{
+		position: relative;
+		bottom: 0;
+	}
+
 }
